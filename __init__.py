@@ -1,4 +1,4 @@
-from aqt import dialogs, mw, gui_hooks
+from aqt import dialogs, gui_hooks, mw
 
 from . import editor, reviewer
 
