@@ -12,7 +12,7 @@ def onBridge(handled, cmd, reviewer):
     search = cmd[len(prefix):]
     browser = dialogs.open("Browser", reviewer.mw)
     browser.form.searchEdit.lineEdit().setText(search)
-    browser.search()
+    browser.onSearchActivated()
     return (True, None)
 
 

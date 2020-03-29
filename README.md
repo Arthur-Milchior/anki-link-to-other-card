@@ -6,12 +6,15 @@ you make a reference to the content another note. You may naturally
 want to create a link, which allow to open see the other note.
 
 ## How to create a link
-There are currently two ways to add a link with this add-on.
+There are currently three ways to add a link with this add-on.
 
 ### Simple way
 You add the note id directly in a field. When the field content is
 displayed, any number with at least 12 digits will be transformed into
 a link, which will open the browser and show this note.
+
+### Buttons
+In the editor, you have two new buttons. You need to select text and click on one of the button. The button "link to note" ![Link to note](icons/note.svg) takes a note id, and create a link to this note id. The button "Link to browser search" ![Link to browser search](icons/browser.svg) take any search, put it in the browser search bar, and search it.
 
 ### HTML
 If you know how to edit html, you can the javascript action `pycmd("browser search:query")` to show the result of the search "query" in the browser. In particular, you can use the query "nid:012345678910" to search the note with id 012345678910.
@@ -31,7 +34,6 @@ This will not work in ankidroid, ios, ankiweb, or when the add-on is not install
 
 ## TODO
 * Allow link to cards ?
-* Add a button to create link in the editor
 * Link works in editor too.
 * In browser, allow to use click and drag to add a link directly.
 * Allow to give name to notes to use in search/use other search
@@ -42,7 +44,8 @@ Key         |Value
 ------------|-------------------------------------------------------------------
 Copyright   | Arthur Milchior <arthur@milchior.fr>
 Based on    | Anki code by Damien Elmes <anki@ichi2.net>
-License     | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
+            | Add hyperlink addon, maintened by @ijgnd, anonymous, probably reddit user /u/NavyTeal, see [reddit](https://www.reddit.com/r/Anki/comments/9t7acy/bringing_markdown_to_anki_21/), and some code from the Power Format Pack: Copyright 2014-2017 Stefan van den Akker <neftas@protonmail.com> , 
+License     | GNU GPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in   | https://github.com/Arthur-Milchior/anki-link-to-other-card
 Addon number| [2053932397](https://ankiweb.net/shared/info/2053932397)
 Support me on| [![Ko-fi](https://ko-fi.com/img/Kofi_Logo_Blue.svg)](Ko-fi.com/arthurmilchior) or [![Patreon](http://www.milchior.fr/patreon.png)](https://www.patreon.com/bePatron?u=146206)
