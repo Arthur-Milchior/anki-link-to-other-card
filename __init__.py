@@ -11,7 +11,8 @@ def onBridge(handled, cmd, reviewer):
         return handled
     search = cmd[len(prefix):]
     browser = dialogs.open("Browser", reviewer.mw)
-    browser.model.search(search)
+    browser.form.searchEdit.lineEdit().setText(search)
+    browser.search()
     return (True, None)
 
 
